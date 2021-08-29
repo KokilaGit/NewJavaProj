@@ -34,6 +34,13 @@ public class VehicleOperation {
         log.info("Vehicle Fuel Type = "+veh3.getFuelType());
         log.info("Vehicle Capacity = "+veh3.getCapacity());
 
+        Vehicle veh4 = new Vehicle( "MotorCycle", 2, "Petrol", 24);
+        log.info("Vehicle 4");
+        log.info("Vehicle Type = "+veh4.getVehicleType());
+        log.info("Vehicle Fuel Type = "+veh4.getFuelType());
+        log.info("Vehicle Capacity = "+veh4.getCapacity());
+        log.info("Vehicle Mileage = "+veh4.getMileage());
+
 
     }
 }

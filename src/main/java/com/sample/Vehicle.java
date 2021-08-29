@@ -2,6 +2,11 @@ package com.sample;
 
 public class Vehicle {
 
+    public String vehicleType;
+    public int capacity;
+    public String fuelType;
+    public float mileage;
+
     public Vehicle() {
 
     }
@@ -18,6 +23,12 @@ public class Vehicle {
 
     }
 
+    public Vehicle(String vehicleType, int capacity, String fuelType, float mileage) {
+        this.vehicleType = vehicleType;
+        this.capacity = capacity;
+        this.fuelType = fuelType;
+        this.mileage = mileage;
+    }
 
     public String getVehicleType() {
         return vehicleType;
@@ -43,11 +54,13 @@ public class Vehicle {
         this.fuelType = fuelType;
     }
 
-    public String vehicleType;
+    public float getMileage() {
+        return mileage;
+    }
 
-    public int capacity;
-
-    public String fuelType;
+    public void setMileage(float mileage) {
+        this.mileage = mileage;
+    }
 
 
 }
